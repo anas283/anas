@@ -10,20 +10,20 @@
 </head>
 
 <body>
-    <div class="w-full h-screen bg-purple-900">
+    <div class="w-full h-full bg-purple-900">
         <!-- navigation -->
         <nav class="flex flex-row">
             <div class="w-1/2 p-4">
                 <a class="text-white" href="#">Logo</a>
             </div>
             <div class="w-1/2 p-4">
-                <img class="float-right" src="images/bars.png" alt="">
+                <img class="w-8 h-8 float-right" src="images/menu.png" alt="">
             </div>
         </nav>
 
         <!-- main text and image -->
-        <main>
-            <div class="w-auto h-auto px-4 pt-12 pb-20">
+        <main class="w-full h-screen">
+            <div class="w-auto h-full px-4 pt-12">
                 <h1 class="text-white text-3xl font-bold w-3/5">I'm a Front-End
                     Developer
                 </h1>
@@ -35,11 +35,38 @@
                     <button class="w-32 h-12 bg-red-600 text-white rounded">View my work</button>
                     <button class="w-32 h-12 text-white border-2 border-white rounded ml-2">My skills</button>
                 </div>
-            </div>
-            <div class="w-auto h-auto">
-                <img class="w-4/5 mx-auto" src="images/person.png" alt="">
+
+                <div class="w-auto h-auto mt-24">
+                    <img class="w-4/5 h-auto mx-auto" src="images/person.png" alt="">
+                </div>
             </div>
         </main>
+
+        <!-- my work -->
+        <div class="w-full h-full px-4 py-20 bg-purple-900 pt-2">
+            <h1 class="text-white text-3xl font-bold">My Work</h1>
+            <div class="mt-4">
+                <div>
+                    <img class="rounded" src="images/dashboard.png" alt="">
+                </div>
+                <div class="mt-4">
+                    <h1 class="text-white text-lg font-bold">Dashboard</h1>
+                    <div class="border-l-2 border-white px-4 mt-4">
+                        <p class="text-white">This dashboard helps admin to monitor all
+                            sales made by sellers.</p>
+                        <ul class="list-disc text-white px-4 mt-2">
+                            <li>Frontend using HTML and TailwindCSS</li>
+                            <li>UI/UX for overall web project</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- my skills -->
+        <div class="bg-teal-800 px-4 py-10">
+            <h1 class="text-white text-3xl font-bold">My Skills</h1>
+        </div>
     </div>
 
     <style>
