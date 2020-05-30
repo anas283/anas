@@ -7,6 +7,8 @@
     <title>Front-End Developer</title>
     <link href="https://unpkg.com/tailwindcss@^1.0/dist/tailwind.min.css" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css">
+    <script src="https://unpkg.com/scroll-out/dist/scroll-out.min.js"></script>
 </head>
 
 <body>
@@ -22,21 +24,23 @@
         </nav>
 
         <!-- main text and image -->
-        <main class="w-full h-screen">
+        <main class="hero w-full h-screen">
             <div class="w-auto h-full px-4 pt-12">
-                <h1 class="text-white text-3xl font-bold w-3/5">I'm a Front-End
-                    Developer
-                </h1>
-                <h3 class="text-white mt-4">I build responsive, user friendly and awesome
-                    website for startups and businesses.
-                </h3>
-                <!-- button -->
-                <div class="flex flex-row mt-6">
-                    <button class="w-32 h-12 bg-red-600 text-white rounded">View my work</button>
-                    <button class="w-32 h-12 text-white border-2 border-white rounded ml-2">My skills</button>
+                <div class="text animated fadeInDown">
+                    <h1 class="text-white text-3xl font-bold w-3/5">I'm a Front-End
+                        Developer
+                    </h1>
+                    <h3 class="text-white mt-4">I build responsive, user friendly and awesome
+                        website for startups and businesses.
+                    </h3>
+                    <!-- button -->
+                    <div class="flex flex-row mt-6">
+                        <button class="w-32 h-12 bg-red-600 text-white rounded">View my work</button>
+                        <button class="w-32 h-12 text-white border-2 border-white rounded ml-2">My skills</button>
+                    </div>
                 </div>
 
-                <div class="w-auto h-auto mt-24">
+                <div class="person w-auto h-auto mt-24 animated fadeInDown">
                     <img class="w-4/5 h-auto mx-auto" src="images/person.png" alt="">
                 </div>
             </div>
@@ -44,13 +48,13 @@
 
         <!-- my work -->
         <section class="w-full h-full px-4 py-20 pt-2">
-            <h1 class="text-white text-3xl font-bold">My Work</h1>
-            <div class="mt-6">
+            <h1 class="work text-white text-3xl font-bold">My Work</h1>
+            <div class="content mt-4">
                 <div>
                     <img class="rounded" src="images/dashboard.png" alt="">
                 </div>
                 <div class="mt-4">
-                    <h1 class="text-white text-lg font-bold">Dashboard</h1>
+                    <h2 class="text-white text-lg font-bold">Dashboard</h2>
                     <div class="border-l-2 border-white px-4 mt-4">
                         <p class="text-white">This dashboard helps admin to monitor all
                             sales made by sellers.</p>
@@ -121,15 +125,17 @@
         <!-- contact me -->
         <section class="px-4 py-20">
             <h1 class="text-white text-3xl font-bold">Contact</h1>
-            <p class="text-white mt-6">
-                My preferred way of contact is via Twitter or
-                e-mail. Feel free to check out my social media
-                presence below to get to know me better.
-            </p>
-            <div class="flex flex-row mt-4">
-                <img class="w-10 h-10 mr-4" src="images/twitter.png" alt="">
-                <img class="w-10 h-10 mr-4" src="images/github.png" alt="">
-                <img class="w-10 h-10" src="images/linkedin.png" alt="">
+            <div>
+                <p class="text-white mt-6">
+                    My preferred way of contact is via Twitter or
+                    e-mail. Feel free to check out my social media
+                    presence below to get to know me better.
+                </p>
+                <div class="flex flex-row mt-4">
+                    <img class="w-10 h-10 mr-4" src="images/twitter.png" alt="">
+                    <img class="w-10 h-10 mr-4" src="images/github.png" alt="">
+                    <img class="w-10 h-10" src="images/linkedin.png" alt="">
+                </div>
             </div>
         </section>
 
@@ -148,7 +154,54 @@
         .card {
             background-color: #351A57;
         }
+
+        /* main start */
+
+        main .text {
+            animation-delay: .5s;
+        }
+
+        main .person {
+            animation-delay: 1s;
+        }
+
+        /* main end */
+
+        /* scroll in animation start */
+
+        section h1[data-scroll] {
+            transition: opacity 1s;
+        }
+
+        section h1[data-scroll="in"] {
+            opacity: 1;
+        }
+
+        section h1[data-scroll="out"] {
+            opacity: 0;
+        }
+
+        @keyframes mymove {
+            from {
+                opacity: 0;
+                top: -30px;
+            }
+
+            to {
+                opacity: 100%;
+                top: 0px;
+            }
+        }
+
+        /* scroll in animation end */
     </style>
+
+    <script>
+        ScrollOut({
+            targets: 'h1',
+        });
+
+    </script>
 </body>
 
 </html>
