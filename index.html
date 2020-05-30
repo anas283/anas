@@ -10,7 +10,7 @@
 </head>
 
 <body>
-    <div class="w-full h-full bg-purple-900">
+    <div class="w-full h-full">
         <!-- navigation -->
         <nav class="flex flex-row">
             <div class="w-1/2 p-4">
@@ -43,7 +43,7 @@
         </main>
 
         <!-- my work -->
-        <div class="w-full h-full px-4 py-20 bg-purple-900 pt-2">
+        <section class="w-full h-full px-4 py-20 pt-2">
             <h1 class="text-white text-3xl font-bold">My Work</h1>
             <div class="mt-6">
                 <div>
@@ -61,51 +61,92 @@
                     </div>
                 </div>
             </div>
-        </div>
+        </section>
 
         <!-- my skills -->
-        <div class="bg-purple-900 px-4 py-20">
+        <section class="px-4 py-20">
             <h1 class="text-white text-3xl font-bold">My Skills</h1>
             <div class="flex flex-col mt-6">
                 <div class="flex flex-wrap">
                     <div class="w-1/4 flex flex-col">
-                        <img class="w-12 h-12 mx-auto" src="images/html5.png" alt="">
-                        <p class="text-white text-center mt-2">HTML5</p>
+                        <img class="w-10 h-10 mx-auto" src="images/html5.png" alt="">
+                        <p class="text-white text-sm text-center mt-2">HTML5</p>
                     </div>
                     <div class="w-1/4 flex flex-col">
-                        <img class="w-12 h-12 mx-auto" src="images/css3.png" alt="">
-                        <p class="text-white text-center mt-2">CSS3</p>
+                        <img class="w-10 h-10 mx-auto" src="images/css3.png" alt="">
+                        <p class="text-white text-sm text-center mt-2">CSS3</p>
                     </div>
                     <div class="w-1/4 flex flex-col">
-                        <img class="w-12 h-12 mx-auto" src="images/sass.png" alt="">
-                        <p class="text-white text-center mt-2">SASS</p>
+                        <img class="w-10 h-10 mx-auto" src="images/sass.png" alt="">
+                        <p class="text-white text-sm text-center mt-2">SASS</p>
                     </div>
                     <div class="w-1/4 flex flex-col">
-                        <img class="w-12 h-12 mx-auto" src="images/javascript.png" alt="">
-                        <p class="text-white text-center mt-2">Javascript</p>
+                        <img class="w-10 h-10 mx-auto" src="images/javascript.png" alt="">
+                        <p class="text-white text-sm text-sm text-center mt-2">Javascript</p>
                     </div>
                 </div>
                 <div class="flex flex-wrap mt-4">
                     <div class="w-1/4 flex flex-col">
-                        <img class="w-12 h-12 mx-auto" src="images/react.png" alt="">
-                        <p class="text-white text-center mt-2">React</p>
+                        <img class="w-10 h-10 mt-4 mx-auto" src="images/react.png" alt="">
+                        <p class="text-white text-sm text-center mt-2">React</p>
                     </div>
                     <div class="w-1/4 flex flex-col">
-                        <img class="w-12 h-auto mt-4 mx-auto" src="images/php.png" alt="">
-                        <p class="text-white text-center mt-4">PHP</p>
+                        <img class="w-10 h-auto mt-4 mx-auto" src="images/php.png" alt="">
+                        <p class="text-white text-sm text-center mt-2">PHP</p>
                     </div>
                     <div class="w-1/4 flex flex-col">
-                        <img class="w-12 h-auto mt-2 mx-auto" src="images/mysql.png" alt="">
-                        <p class="text-white text-center mt-4">MySQL</p>
+                        <img class="w-10 h-auto mt-4 mx-auto" src="images/mysql.png" alt="">
+                        <p class="text-white text-sm text-center mt-2">MySQL</p>
                     </div>
                 </div>
             </div>
-        </div>
+        </section>
+
+        <!-- about me -->
+        <section class="px-4 py-20">
+            <h1 class="text-white text-3xl font-bold">About</h1>
+            <div class="card rounded-md shadow-lg mt-6 px-6 py-10">
+                <img class="mx-auto" src="images/profile-pic.png" alt="">
+                <p class="text-white text-center mt-6">Hi, I am Anas. I am a
+                    freelance Front-End Developer. I am very
+                    passionate about building website and
+                    designing interfaces while taking into
+                    consideration the latest UX trends
+                    techniques. I always balance looking
+                    fresh with being effective.
+                </p>
+            </div>
+        </section>
+
+        <!-- contact me -->
+        <section class="px-4 py-20">
+            <h1 class="text-white text-3xl font-bold">Contact</h1>
+            <p class="text-white mt-6">
+                My preferred way of contact is via Twitter or
+                e-mail. Feel free to check out my social media
+                presence below to get to know me better.
+            </p>
+            <div class="flex flex-row mt-4">
+                <img class="w-10 h-10 mr-4" src="images/twitter.png" alt="">
+                <img class="w-10 h-10 mr-4" src="images/github.png" alt="">
+                <img class="w-10 h-10" src="images/linkedin.png" alt="">
+            </div>
+        </section>
+
+        <!-- footer -->
+        <footer class="px-4 py-10">
+            <p class="text-white text-center">© 2020 Anas</p>
+        </footer>
     </div>
 
     <style>
         body {
             font-family: 'Roboto', sans-serif;
+            background-color: #3F1F68;
+        }
+
+        .card {
+            background-color: #351A57;
         }
     </style>
 </body>
