@@ -7,47 +7,62 @@
     <title>Front-End Developer</title>
     <link href="https://unpkg.com/tailwindcss@^1.0/dist/tailwind.min.css" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css">
     <script src="https://unpkg.com/scroll-out/dist/scroll-out.min.js"></script>
 </head>
 
 <body>
-    <div class="w-full h-full">
+    <div class="w-full h-full md:w-11/12 xl:w-5/6 mx-auto">
         <!-- navigation -->
-        <nav class="flex flex-row">
-            <div class="w-1/2 p-4">
-                <a class="text-white" href="#">Logo</a>
+        <nav class="flex flex-row md:mt-4 h-16 overflow-hidden">
+            <div class="w-1/2 p-4 lg:mt-4 lg:1/5 xl:mt-0">
+                <a class="text-white " href="#">Logo</a>
             </div>
-            <div class="w-1/2 p-4">
-                <img class="w-8 h-8 float-right" src="images/menu.png" alt="">
+            <div class="w-1/2 p-4 lg:invisible lg:w-0">
+                <img class="w-8 h-8 float-right xl:float-none" src="images/menu.png" alt="">
+            </div>
+            <div class="invisible w-0 lg:visible lg:w-4/5 lg:flex lg:flex-row lg:p-2 xl:p-4">
+                <div class="w-full p-2 mt-4 xl:mt-0">
+                    <ul class="flex flex-wrap text-white float-right mr-12">
+                        <li class="ml-12 xl:ml24"><a href="#">Home</a></li>
+                        <li class="ml-16"><a href="#">My work</a></li>
+                        <li class="ml-16"><a href="#">About</a></li>
+                    </ul>
+                </div>
+                <div class="w-auto mt-0">
+                    <button class="float right w-32 h-12 bg-red-600 text-white text-sm rounded">Contact
+                        me</button>
+                </div>
             </div>
         </nav>
 
         <!-- main text and image -->
-        <main class="hero w-full h-screen">
-            <div class="w-auto h-full px-4 pt-12">
-                <div class="text animated fadeInDown">
-                    <h1 class="text-white text-3xl font-bold w-3/5">I'm a Front-End
+        <main class="hero w-full h-screen xl:h-full">
+            <div class="w-auto h-full px-4 pt-12 xl:flex xl:flex-row md:pt-40 lg:pt-10">
+                <div class="text animated fadeInDown md:-mt-16 xl:w-1/2 xl:mt-24">
+                    <h1 class="text-white text-3xl font-bold lg:text-4xl xl:w-3/5 xl:text-5xl">I'm a Front-End
                         Developer
                     </h1>
-                    <h3 class="text-white mt-4">I build responsive, user friendly and awesome
+                    <h3 class="text-white mt-4 xl:w-3/5">I build responsive, user friendly and awesome
                         website for startups and businesses.
                     </h3>
                     <!-- button -->
                     <div class="flex flex-row mt-6">
-                        <button class="w-32 h-12 bg-red-600 text-white rounded">View my work</button>
-                        <button class="w-32 h-12 text-white border-2 border-white rounded ml-2">My skills</button>
+                        <button class="w-32 h-12 bg-red-600 text-white text-sm rounded">View my work</button>
+                        <button class="w-32 h-12 text-white text-sm border-2 border-white rounded ml-2 xl:ml-4">My
+                            skills</button>
                     </div>
                 </div>
 
-                <div class="person w-auto h-auto mt-24 animated fadeInDown">
-                    <img class="w-4/5 h-auto mx-auto" src="images/person.png" alt="">
+                <div class="person w-auto h-auto mt-24 animated fadeInDown xl:w-1/2 xl:mt-4">
+                    <img class="w-4/5 h-auto mx-auto md:w-3/5 xl:w-5/6 xl:float-right" src="images/person.png" alt="">
                 </div>
             </div>
         </main>
 
         <!-- my work -->
-        <section class="w-full h-full px-4 py-20 pt-2">
+        <section class="w-full h-full px-4 py-20 pt-2 lg:-mt-64 xl:mt-64">
             <h1 class="work text-white text-3xl font-bold">My Work</h1>
             <div class="content mt-4">
                 <div>
@@ -147,7 +162,7 @@
 
     <style>
         body {
-            font-family: 'Roboto', sans-serif;
+            font-family: 'Open Sans', sans-serif;
             background-color: #3F1F68;
         }
 
