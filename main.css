@@ -17,6 +17,29 @@ main .person {
   animation-delay: 1s;
 }
 
+nav ul li:hover {
+  margin-top: -2px;
+  border-bottom: 2px solid white;
+  transition: 0.3s;
+}
+
+.red:hover {
+  color: #e43e3e;
+  background-color: #3f1f68;
+  border: 2px solid #e43e3e;
+  transition: 0.3s;
+}
+
+main .white:hover {
+  color: #e43e3e;
+  border: 2px solid #e43e3e;
+  transition: 0.3s;
+}
+
+main button:focus {
+  outline: none !important;
+}
+
 /* main end */
 
 /* scroll in animation start */
@@ -36,3 +59,12 @@ main .person {
 }
 
 /* scroll in animation end */
+
+/* work start */
+
+section .work-pic:hover {
+  transform: scale(0.98);
+  transition: 0.4s;
+}
+
+/* work end */

@@ -17,7 +17,7 @@
     <div class="w-full h-full md:w-11/12 xl:w-5/6 mx-auto">
         <!-- navigation -->
         <nav class="flex flex-row md:mt-4 h-16 overflow-hidden">
-            <div class="w-1/2 p-4 lg:mt-4 lg:1/5 xl:mt-0">
+            <div class="w-1/2 p-4 lg:mt-2 lg:1/5 xl:mt-0">
                 <img class="w-10 h-8" src="images/logo.png" alt="">
             </div>
             <div class="w-1/2 lg:invisible lg:w-0">
@@ -30,8 +30,8 @@
             <!-- <div class="w-1/2 p-4 lg:invisible lg:w-0">
                 <img class="w-8 h-8 float-right xl:float-none" src="images/menu.png" alt="">
             </div> -->
-            <div class="invisible w-0 lg:visible lg:w-4/5 lg:flex lg:flex-row lg:p-2 xl:p-4">
-                <div class="w-full p-2 mt-4 xl:mt-0">
+            <div class="invisible w-0 lg:visible lg:w-4/5 lg:flex lg:flex-row lg:p-2">
+                <div class="w-full p-2 xl:mt-0">
                     <ul class="flex flex-wrap text-white float-right mr-12">
                         <li class="ml-12 xl:ml24"><a href="#">Home</a></li>
                         <li class="ml-16"><a href="#">My work</a></li>
@@ -39,7 +39,7 @@
                     </ul>
                 </div>
                 <div class="w-auto mt-0">
-                    <button class="float right w-32 h-12 bg-red-600 text-white text-sm rounded">Contact
+                    <button class="red float right w-32 h-12 bg-red-600 text-white text-sm rounded">Contact
                         me</button>
                 </div>
             </div>
@@ -47,7 +47,7 @@
 
         <!-- main text and image -->
         <main class="hero w-full h-screen xl:h-full">
-            <div class="w-auto h-full px-4 pt-12 xl:flex xl:flex-row md:pt-40 lg:pt-10">
+            <div class="w-auto h-full px-4 pt-12 xl:flex xl:flex-row md:pt-40 xl:pt-10">
                 <div class="text animated fadeInDown md:-mt-16 xl:w-1/2 xl:mt-24">
                     <h1 class="text-white text-3xl font-bold lg:text-4xl xl:w-3/5 xl:text-5xl">I'm a Front-End
                         Developer
@@ -57,8 +57,8 @@
                     </h3>
                     <!-- button -->
                     <div class="flex flex-row mt-6">
-                        <button class="w-32 h-12 bg-red-600 text-white text-sm rounded">View my work</button>
-                        <button class="w-32 h-12 text-white text-sm border-2 border-white rounded ml-2 xl:ml-4">My
+                        <button class="red w-32 h-12 bg-red-600 text-white text-sm rounded">View my work</button>
+                        <button class="white w-32 h-12 text-white text-sm border-2 border-white rounded ml-2 xl:ml-4">My
                             skills</button>
                     </div>
                 </div>
@@ -72,12 +72,14 @@
         <!-- my work -->
         <section class="w-full h-full px-4 py-20 pt-2 lg:-mt-64 xl:mt-64">
             <h1 data-scroll class="text-white text-3xl font-bold">My Work</h1>
-            <div class="content mt-4">
-                <div>
-                    <img class="rounded" src="images/dashboard.png" alt="">
-                </div>
-                <div class="mt-4">
-                    <h2 class="text-white text-lg font-bold">Dashboard</h2>
+            <div class="content mt-4 md:mt-6 md:flex md:flex-wrap">
+                <a class="md:w-1/2" target="_blank" href="https://sales-dashboard.netlify.app/">
+                    <img class="work-pic rounded shadow-md cursor-pointer" src="images/dashboard.png" alt="">
+                </a>
+                <div class="mt-4 md:w-1/2 md:pl-6">
+                    <a class="text-white text-lg font-bold hover:text-red-600 transition duration-200" target="_blank"
+                        href="https://sales-dashboard.netlify.app/">Dashboard
+                    </a>
                     <div class="border-l-2 border-white px-4 mt-4">
                         <p class="text-white">This dashboard helps admin to monitor all
                             sales made by sellers.</p>
@@ -93,47 +95,49 @@
         <!-- my skills -->
         <section class="px-4 py-20">
             <h1 data-scroll class="text-white text-3xl font-bold">My Skills</h1>
-            <div class="flex flex-col mt-6">
+            <div class="flex flex-col mt-6 md:mt-8">
                 <div class="flex flex-wrap">
-                    <div class="w-1/4 flex flex-col">
+                    <div class="w-1/4 flex flex-col md:w-1/6">
                         <img class="w-10 h-10 mx-auto" src="images/html5.png" alt="">
                         <p class="text-white text-sm text-center mt-2">HTML5</p>
                     </div>
-                    <div class="w-1/4 flex flex-col">
+                    <div class="w-1/4 flex flex-col md:w-1/6">
                         <img class="w-10 h-10 mx-auto" src="images/css3.png" alt="">
                         <p class="text-white text-sm text-center mt-2">CSS3</p>
                     </div>
-                    <div class="w-1/4 flex flex-col">
+                    <div class="w-1/4 flex flex-col md:w-1/6">
                         <img class="w-10 h-10 mx-auto" src="images/sass.png" alt="">
                         <p class="text-white text-sm text-center mt-2">SASS</p>
                     </div>
-                    <div class="w-1/4 flex flex-col">
+                    <div class="w-1/4 flex flex-col md:w-1/6">
                         <img class="w-10 h-10 mx-auto" src="images/javascript.png" alt="">
                         <p class="text-white text-sm text-sm text-center mt-2">Javascript</p>
                     </div>
-                </div>
-                <div class="flex flex-wrap mt-4">
-                    <div class="w-1/4 flex flex-col">
-                        <img class="w-10 h-10 mt-4 mx-auto" src="images/react.png" alt="">
+                    <div class="w-1/4 flex flex-col md:w-1/6">
+                        <img class="w-10 h-10 mt-4 mx-auto md:mt-0" src="images/react.png" alt="">
                         <p class="text-white text-sm text-center mt-2">React</p>
                     </div>
-                    <div class="w-1/4 flex flex-col">
-                        <img class="w-10 h-auto mt-4 mx-auto" src="images/php.png" alt="">
+                    <div class="w-1/4 flex flex-col md:w-1/6">
+                        <img class="w-10 h-auto mt-4 mx-auto md:mt-0" src="images/php.png" alt="">
                         <p class="text-white text-sm text-center mt-2">PHP</p>
                     </div>
-                    <div class="w-1/4 flex flex-col">
+                    <div class="w-1/4 flex flex-col md:w-1/6">
                         <img class="w-10 h-auto mt-4 mx-auto" src="images/mysql.png" alt="">
                         <p class="text-white text-sm text-center mt-2">MySQL</p>
                     </div>
                 </div>
+                <!-- <div class="flex flex-wrap mt-4">
+                    
+                </div> -->
             </div>
         </section>
 
         <!-- about me -->
         <section class="px-4 py-20">
             <h1 data-scroll class="text-white text-3xl font-bold">About</h1>
-            <div class="card rounded-md shadow-lg mt-6 px-6 py-10">
-                <img class="mx-auto" src="images/profile-pic.png" alt="">
+            <div
+                class="card rounded-md shadow-lg mt-6 md:mt-6 px-10 py-10 md:w-1/2 lg:w-2/5 xl:w-1/3 xl:py-16 md:mx-auto">
+                <img class="w-32 h-32 mx-auto border-2 border-white rounded-full" src="images/profile-pic.png" alt="">
                 <p class="text-white text-center mt-6">Hi, I am Anas. I am a
                     freelance Front-End Developer. I am very
                     passionate about building website and
@@ -146,18 +150,24 @@
         </section>
 
         <!-- contact me -->
-        <section class="px-4 py-20">
+        <section class="px-4 py-20 lg:w-1/2">
             <h1 data-scroll class="text-white text-3xl font-bold">Contact</h1>
             <div>
-                <p class="text-white mt-6">
+                <p class="text-white mt-6 md:mt-8">
                     My preferred way of contact is via Twitter or
                     e-mail. Feel free to check out my social media
                     presence below to get to know me better.
                 </p>
                 <div class="flex flex-row mt-4">
-                    <img class="w-10 h-10 mr-4" src="images/twitter.png" alt="">
-                    <img class="w-10 h-10 mr-4" src="images/github.png" alt="">
-                    <img class="w-10 h-10" src="images/linkedin.png" alt="">
+                    <a href="https://twitter.com/anas_283" target="_blank">
+                        <img class="w-10 h-10 mr-4" src="images/twitter.png" alt="">
+                    </a>
+                    <a href="https://github.com/anas283" target="_blank">
+                        <img class="w-10 h-10 mr-4" src="images/github.png" alt="">
+                    </a>
+                    <a href="https://www.linkedin.com/in/anas283/" target="_blank">
+                        <img class="w-10 h-10" src="images/linkedin.png" alt="">
+                    </a>
                 </div>
             </div>
         </section>
