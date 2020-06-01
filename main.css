@@ -1,0 +1,38 @@
+body {
+  font-family: "Open Sans", sans-serif;
+  background-color: #3f1f68;
+}
+
+.card {
+  background-color: #351a57;
+}
+
+/* main start */
+
+main .text {
+  animation-delay: 0.5s;
+}
+
+main .person {
+  animation-delay: 1s;
+}
+
+/* main end */
+
+/* scroll in animation start */
+
+[data-scroll] {
+  transition: all 1s;
+}
+
+[data-scroll="in"] {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+[data-scroll="out"] {
+  opacity: 0;
+  transform: translateY(25px);
+}
+
+/* scroll in animation end */
