@@ -15,15 +15,22 @@
 
 <body>
     <div class="w-full h-full md:w-11/12 xl:w-5/6 mx-auto">
+        <div id="mySidenav" class="sidenav visible lg:invisible text-lg" onclick="closeNow();">
+            <a href="index.html">Home</a>
+            <a href="#work">My work</a>
+            <a href="#about">About</a>
+            <a href="#contact">Contact me</a>
+        </div>
+
         <!-- navigation -->
         <nav class="flex flex-row md:mt-4 h-16 overflow-hidden">
             <div class="w-1/2 p-4 lg:mt-2 lg:1/5 xl:mt-0">
                 <img class="w-10 h-8" src="images/logo.png" alt="">
             </div>
-            <div class="w-1/2 lg:invisible lg:w-0">
+            <div class="w-1/2 lg:invisible lg:w-0 z-50">
                 <button class="hamburger hamburger--elastic float-right focus:outline-none" type="button">
                     <span class="hamburger-box">
-                        <span class="hamburger-inner"></span>
+                        <span id="menu" class="hamburger-inner"></span>
                     </span>
                 </button>
             </div>
@@ -33,7 +40,7 @@
             <div class="invisible w-0 lg:visible lg:w-4/5 lg:flex lg:flex-row lg:p-2">
                 <div class="w-full p-2 xl:mt-0">
                     <ul class="flex flex-wrap text-white float-right mr-12">
-                        <li class="ml-12 xl:ml24"><a href="#">Home</a></li>
+                        <li class="ml-12 xl:ml24"><a href="index.html">Home</a></li>
                         <li class="ml-16"><a href="#work">My work</a></li>
                         <li class="ml-16"><a href="#about">About</a></li>
                     </ul>
@@ -194,7 +201,27 @@
             // Toggle class "is-active"
             hamburger.classList.toggle("is-active");
             // Do something else, like open/close menu
+
+            if (hamburger.classList.contains("is-active")) {
+                openNav();
+            }
+            else {
+                closeNav();
+            }
         });
+
+        function openNav() {
+            document.getElementById("mySidenav").style.width = "100%";
+        }
+
+        function closeNav() {
+            document.getElementById("mySidenav").style.width = "0";
+        }
+
+        function closeNow() {
+            document.getElementById("mySidenav").style.width = "0";
+            !hamburger.classList.toggle("is-active");
+        }
     </script>
 </body>
 
