@@ -31,22 +31,16 @@ html {
   padding: 8px 8px 8px 32px;
   text-decoration: none;
   color: white;
+  font-weight: 600;
+  font-size: 1.4rem;
   display: block;
   transition: 0.3s;
-  margin: 0 auto;
+  margin-top: 10px;
   text-align: center;
 }
 
 .sidenav a:hover {
-  color: rgb(187, 187, 187);
-}
-
-.sidenav .closebtn {
-  position: absolute;
-  top: 0;
-  right: 25px;
-  font-size: 36px;
-  margin-left: 50px;
+  color: rgb(139, 139, 139);
 }
 
 /* sidenav end */
@@ -67,11 +61,20 @@ nav ul li:hover {
   transition: 0.3s;
 }
 
+.red {
+  color: white;
+  background-color: #e43e3e;
+  border: 2px solid #e43e3e;
+}
+
 .red:hover {
   color: #e43e3e;
   background-color: #3f1f68;
-  border: 2px solid #e43e3e;
   transition: 0.3s;
+}
+
+.red:focus {
+  outline: none !important;
 }
 
 main .white:hover {
@@ -112,3 +115,17 @@ section .work-pic:hover {
 }
 
 /* work end */
+
+/* contact start */
+
+#contact .icon:hover {
+  transform: scale(0.9);
+  transition: 0.4s;
+}
+
+section .up:hover {
+  transform: scale(0.9);
+  transition: 0.4s;
+}
+
+/* contact end */

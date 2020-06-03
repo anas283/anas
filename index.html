@@ -14,12 +14,17 @@
 </head>
 
 <body>
-    <div class="w-full h-full md:w-11/12 xl:w-5/6 mx-auto">
+    <div id="home" class="w-full h-full md:w-11/12 xl:w-5/6 mx-auto">
         <div id="mySidenav" class="sidenav visible lg:invisible text-lg" onclick="closeNow();">
-            <a href="index.html">Home</a>
+            <div class="flex flex-row px-16 ml-8 mb-10">
+                <div class="w-20 border-b-2 border-white mb-2">&nbsp;</div>
+                <h3 class="text-sm text-white mt-10 mx-4 uppercase">Anas</h3>
+                <div class="w-20 border-b-2 border-white mb-2">&nbsp;</div>
+            </div>
+            <a href="#home">Home</a>
             <a href="#work">My work</a>
             <a href="#about">About</a>
-            <a href="#contact">Contact me</a>
+            <a href="#contact">Contact</a>
         </div>
 
         <!-- navigation -->
@@ -34,13 +39,10 @@
                     </span>
                 </button>
             </div>
-            <!-- <div class="w-1/2 p-4 lg:invisible lg:w-0">
-                <img class="w-8 h-8 float-right xl:float-none" src="images/menu.png" alt="">
-            </div> -->
             <div class="invisible w-0 lg:visible lg:w-4/5 lg:flex lg:flex-row lg:p-2">
                 <div class="w-full p-2 xl:mt-0">
                     <ul class="flex flex-wrap text-white float-right mr-12">
-                        <li class="ml-12 xl:ml24"><a href="index.html">Home</a></li>
+                        <li class="ml-12 xl:ml24"><a href="#home">Home</a></li>
                         <li class="ml-16"><a href="#work">My work</a></li>
                         <li class="ml-16"><a href="#about">About</a></li>
                     </ul>
@@ -162,25 +164,38 @@
         </section>
 
         <!-- contact me -->
-        <section id="contact" class="px-4 py-20 lg:w-1/2">
+        <section id="contact" class="px-4 pt-20 pb-10 lg:w-1/2">
             <h1 data-scroll class="text-white text-3xl font-bold">Contact</h1>
-            <div>
+            <div class="mt-8">
+                <button class="red float right w-32 h-12 text-sm rounded">
+                    <a class="text-sm rounded" href="mailto:hello@muhammadanas.dev">
+                        Email me
+                    </a>
+                </button>
                 <p class="text-white mt-6 md:mt-8">
                     My preferred way of contact is via Twitter or
                     e-mail. Feel free to check out my social media
                     presence below to get to know me better.
                 </p>
                 <div class="flex flex-row mt-4">
-                    <a href="https://twitter.com/anas_283" target="_blank">
+                    <a class="icon" href="https://twitter.com/anas_283" target="_blank">
                         <img class="w-10 h-10 mr-4" src="images/twitter.png" alt="">
                     </a>
-                    <a href="https://github.com/anas283" target="_blank">
+                    <a class="icon" href="https://github.com/anas283" target="_blank">
                         <img class="w-10 h-10 mr-4" src="images/github.png" alt="">
                     </a>
-                    <a href="https://www.linkedin.com/in/anas283/" target="_blank">
+                    <a class="icon" href="https://www.linkedin.com/in/anas283/" target="_blank">
                         <img class="w-10 h-10" src="images/linkedin.png" alt="">
                     </a>
                 </div>
+            </div>
+        </section>
+
+        <section class="w-full h-auto px-4">
+            <div class="w-full flex justify-end">
+                <button class="up w-12 h-12 bg-red-600 rounded-full p-2">
+                    <a href="#home"><img class="w-6 h-6 mx-auto" src="images/up-arrow.png" alt=""></a>
+                </button>
             </div>
         </section>
 
