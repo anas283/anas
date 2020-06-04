@@ -63,6 +63,7 @@ nav ul li:hover {
 
 .red {
   color: white;
+  padding-top: 10px;
   background-color: #e43e3e;
   border: 2px solid #e43e3e;
 }
@@ -75,6 +76,10 @@ nav ul li:hover {
 
 .red:focus {
   outline: none !important;
+}
+
+main .white {
+  padding-top: 10px;
 }
 
 main .white:hover {
